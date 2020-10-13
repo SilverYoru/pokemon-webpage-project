@@ -1,0 +1,328 @@
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Varela Round', sans-serif;
+colors: #eb5e55, #edf2f4, #141414, #e6af2e 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.top-nav {
+  font-family: "Varela Round", sans-serif;
+  background-color: #edf2f4;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 4px solid;
+  border-bottom-color: #e6af2e;
+  z-index: 12;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0 15px;
+  padding: 20px;
+  color: #141414;
+  transition: 0.5s ease-in-out;
+}
+.top-nav a:hover {
+  background-color: #141414;
+  color: #e6af2e;
+  border-radius: 25px;
+}
+.left-side a:nth-of-type(3) {
+  background-color: #141414;
+  color: #e6af2e;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.desk-logo {
+  height: 70px;
+  animation: bounce 1s infinite alternate;
+  margin: 50px auto;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+ul {
+  list-style: none;
+}
+.mid-nav {
+  font-family: "Varela Round", sans-serif;
+  background-color: #edf2f4;
+  border-bottom: 3px solid;
+  border-bottom-color: #eb5e55;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 500px;
+  padding: 10px;
+  margin: 30px 450px;
+}
+.mid-nav li {
+  margin: 0 20px;
+}
+.mid-nav li:nth-of-type(1) {
+  background-color: #eb5e55;
+  color: #141414;
+  font-weight: bold;
+  text-indent: 70px;
+  font-family: "Varela Round", sans-serif;
+  padding: 20px 60px 20px 0px;
+  margin: 0 -10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.body-2 h1 {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+h3 {
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #eb5e55;
+  text-indent: 20px;
+  width: 400px;
+  padding: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+h5 {
+  font-family: "Crimson Text", serif;
+  display: block;
+  width: 150px;
+  line-height: 40px;
+  cursor: pointer;
+  background: #eb5e55;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #edf2f4;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px;
+  border-radius: 10px;
+  transition: 0.7s ease-in;
+}
+
+h5:hover {
+  background-color: #141414;
+  color: #e6af2e;
+  border: 2px solid #e6af2e;
+  box-shadow: 1px 3px #e6af2e;
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin: 0 15px;
+}
+
+.event-container {
+  height: 250px;
+  width: 400px;
+}
+.event-img {
+  background-position: center;
+  object-fit: cover;
+  width: 400px;
+  height: 250px;
+}
+.event-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+  height: 250px;
+  width: 800px;
+  color: #e6af2e;
+}
+
+.event-headline {
+  font-family: "Crimson Text", serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 730px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.event-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  padding: 5px;
+}
+.bottom-details {
+  font-family: "Varela Round", sans-serif;
+  display: block;
+  width: 150px;
+  cursor: pointer;
+  line-height: 40px;
+  background: #eb5e55;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #edf2f4;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 700px;
+  border-radius: 10px;
+  transition: 0.7s ease-in;
+}
+.bottom-details:hover {
+  background-color: #141414;
+  color: #e6af2e;
+  border: 3px solid #e6af2e;
+  box-shadow: 1px 3px #e6af2e;
+}
+
+footer {
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #141414;
+  color: #edf2f4;
+  height: 50px;
+  width: 100%;
+}
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottom-nav li {
+  padding: 15px 0px 10px 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%vw;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(235, 94, 85, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-family: "Crimson Text", serif;
+  background-color: rgba(235, 94, 85, 0.5);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 1420px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #eb5e55;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

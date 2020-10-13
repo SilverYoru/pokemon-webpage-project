@@ -1,0 +1,224 @@
+/* 
+font-family: 'Crimson Text', serif;
+font-family: 'Varela Round', sans-serif;
+colors: #eb5e55, #edf2f4, #141414, #e6af2e 
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.top-nav {
+  font-family: "Varela Round", sans-serif;
+  background-color: #edf2f4;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 4px solid;
+  border-bottom-color: #e6af2e;
+  z-index: 12;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0 15px;
+  padding: 20px;
+  color: #141414;
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  background-color: #141414;
+  color: #e6af2e;
+  border-radius: 25px;
+}
+
+.left-side a:nth-of-type(1) {
+  background-color: #141414;
+  color: #e6af2e;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.desk-logo {
+  height: 70px;
+  animation: bounce 1s infinite alternate;
+  margin: 50px auto;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.body-1 {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  top: 68px;
+  background-image: url(https://daily.pokecommunity.com/wp-content/uploads/2019/11/gym1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.intro-content {
+  color: #edf2f4;
+  text-align: center;
+  padding-top: 15%;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.intro-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.intro-content p {
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+}
+.body-2 {
+  width: 100%;
+  position: relative;
+  top: 450px;
+  background: #edf2f4;
+  height: 1450px;
+}
+
+.trainer-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 5px;
+  grid-gap: 5px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.trainer-container {
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.show-img {
+  display: flex;
+  background-position: fill;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+.trainer-text-container {
+  background-color: #e6af2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid black;
+  padding: 2rem 1rem;
+  min-height: 3em;
+  resize: both;
+  background: #ffd73e33;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+}
+
+.trainer-headline {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.trainer-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.bottom-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 60px;
+}
+.trainer-choices {
+  display: flex;
+  flex-direction: column;
+}
+.top-content-img {
+  height: 300px;
+  width: 400px;
+  background-position: center center;
+  object-fit: center;
+  border-radius: 10px;
+}
+.bottom-details {
+  background-color: #e6af2e;
+  height: 40px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 4%;
+  border: 3px solid #141414;
+  box-shadow: 1px 3px #141414;
+  border-radius: 10px;
+  transition: 0.7s ease-in;
+}
+.bottom-details:hover {
+  background-color: #141414;
+  color: #e6af2e;
+  border: 3px solid #e6af2e;
+  box-shadow: 1px 3px #e6af2e;
+}
+footer {
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #141414;
+  color: #edf2f4;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 15px 0px 10px 20px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Events Themed Page</title>
+  </head>
+
+  <body>
+    <header class="top-nav">
+      <div class="left-side">
+        <img
+          class="desk-logo"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/55b47d98-207a-492d-b1b1-f26c507eb29f/d2nzvu7-3b5d28ad-549c-4a40-82ae-dd285f356314.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTViNDdkOTgtMjA3YS00OTJkLWIxYjEtZjI2YzUwN2ViMjlmXC9kMm56dnU3LTNiNWQyOGFkLTU0OWMtNGE0MC04MmFlLWRkMjg1ZjM1NjMxNC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.DZY6D-Q6PJrSV7kQiplgqr8bFWcEoSyerE6T90cS0gU"
+          alt="pokemon ball"
+        />
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Forums</a>
+          <a href="#">Team Builder</a>
+        </nav>
+      </div>
+      <div class="right-side">
+        <nav class="right-nav">
+          <a href="#">My Account</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--Main content-->
+    <section>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
+            class="slideshow-img"
+            src="https://attackofthefanboy.com/wp-content/uploads/2019/11/Pokemon-Sword-and-Shield-How-to-Change-Uniform.jpg"
+          />
+          <div class="text">Test your Skills Against the Best</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            class="slideshow-img"
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2019/11/Pokemon-Sword-Shield-Pidove-Raid-Battle-Wild-Area.png"
+          />
+          <div class="text">
+            Encounter Pokémon like Gengar, Grimmsnarl, Morpeko, and More in Max
+            Raid Battles
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            class="slideshow-img"
+            src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-sword-shield/ranked-battles/october-ranked-battle-season-169-en.jpg"
+          />
+          <div class="text">Rank is Reset</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <section class="body-2">
+      <ul class="mid-nav">
+        <li>ALL</li>
+        <li>Local</li>
+        <li>National</li>
+        <li>Global</li>
+      </ul>
+      <h1>Upcoming Events</h1>
+      <h3>October 2020</h3>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-1"
+            src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-sword-shield/online-competition/battle-of-legends/battle-of-legends-169-en.jpg"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">
+            Compete in the Battle of Legends Online Competition
+          </h2>
+          <p class="event-text">
+            Earn Battle Points by testing your skills against other Pokémon
+            Sword and Pokémon Shield players from around the world.
+          </p>
+          <h5 id="compete-link">Learn More ></h5>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-2"
+            src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-sword-shield/ranked-battles/october-ranked-battle-season-169-en.jpg"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">
+            Pokémon Sword and Pokémon Shield Ranked Battles October Season Is
+            Here
+          </h2>
+          <p class="event-text">
+            Battle your fellow Trainers to move up the leaderboard and earn
+            helpful in-game rewards.
+          </p>
+          <h5 id="rank-link">Learn More ></h5>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-3"
+            src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-sword-shield/distributions/pikachu/pikachu-03-169.jpg"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">
+            Get Ash’s Pikachu Wearing Ash’s Caps in Pokémon Sword or Shield
+          </h2>
+          <p class="event-text">
+            Enter the Mystery Gift passwords into your game to receive different
+            forms of Pikachu that are decked out in Ash’s iconic headgear.
+          </p>
+          <h5 id="ash-link">Learn More ></h5>
+        </div>
+      </div>
+      <h3>November 2020</h3>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-4"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlCQWhv6_duDoZE9pXF08SqsHUyWXQKCIGdQ&usqp=CAU"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">
+            2020 Pokémon Latin America International Championships
+          </h2>
+          <p class="event-text">
+            This season's event will take place at the Centro de Eventos PRO
+            MAGNO in São Paulo, Brazil, on November 15–17. It will feature high
+            Championship Point payouts and thousands of dollars' worth of
+            prizes, spread between the Pokémon TCG and video game competitions.
+          </p>
+          <h5 id="latin-link">Learn More ></h5>
+        </div>
+      </div>
+      <h3>December 2020</h3>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-5"
+            src="https://assets.pokemon.com/assets//cms2/img/attend-events/championship/2020-players-cup/2020-players-cup-finals-results-875.jpg"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">Pokémon Players Cup Pokémon TCG Finals</h2>
+          <p class="event-text">
+            Competitors in the Pokémon TCG Players Cup Finals battled using the
+            Standard format in a double-elimination bracket. Each player was
+            permitted to use cards printed in expansions from Sun & Moon—Team Up
+            through Sword & Shield—Darkness Ablaze, as well as permitted Black
+            Star Promo cards.
+          </p>
+          <h5 id="tcg-link">Learn More ></h5>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-container">
+          <img
+            class="event-img event-6"
+            src="https://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_320/v1547024658/photos/288043_original.jpg"
+          />
+        </div>
+        <div class="event-text-container">
+          <h2 class="event-headline">
+            Dallas Regional Championships - Video Game Masters Division
+          </h2>
+          <p class="event-text">
+            Trainers competing in the 2020 Pokémon Dallas Regional Championships
+            battled using the Series 1 2020 Video Game Championships format.
+            Battles took place in Pokémon Sword and Pokémon Shield. Players were
+            permitted to use any Pokémon in the Galar Pokédex except for the
+            strongest Legendary Pokémon and certain Pokémon with the Gigantamax
+            Factor.
+          </p>
+          <h5 id="dallas-link">Learn More ></h5>
+        </div>
+      </div>
+    </section>
+    <div class="bottom-details">
+      <h4>More Events</h4>
+    </div>
+    <footer>
+      <ul class="bottom-nav">
+        <li>About Onyx League</li>
+        <li>Careers</li>
+        <li>Advertising Terms</li>
+        <li>Privacy Terms of Use</li>
+        <li>Help</li>
+      </ul>
+    </footer>
+    <script src="js/script2.js"></script>
+  </body>
+</html>
